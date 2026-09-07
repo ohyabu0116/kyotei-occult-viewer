@@ -1,35 +1,28 @@
 {
   "version": "boaters-runtime-health-v1",
-  "generated_at": "2026-09-07T09:00:16+09:00",
+  "generated_at": "2026-09-07T09:10:25+09:00",
   "date": "2026-09-07",
   "active_window": true,
-  "startup_warmup": true,
-  "active_minutes": 0.277,
+  "startup_warmup": false,
+  "active_minutes": 10.42,
   "window": {
     "start": "09:00",
     "end": "21:00"
   },
-  "state": "failed",
+  "state": "degraded",
   "healthy": false,
-  "critical_issues": [
-    "cycle:publisher:attempt_stale,success_stale"
-  ],
+  "critical_issues": [],
   "warnings": [
-    "storage:free_space_below_warning_threshold",
-    "artifact:race_schedule:missing_or_stale",
-    "artifact:dashboard_json:missing_or_stale",
-    "artifact:monitor_output:missing_or_stale",
-    "semantic:race_schedule_integrity:payload_not_object",
-    "semantic:monitor_decision_integrity:data_integrity_missing"
+    "storage:free_space_below_warning_threshold"
   ],
   "storage": {
     "healthy": true,
     "reason": "ok",
     "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime",
     "total_bytes": 245107195904,
-    "used_bytes": 231955427328,
-    "free_bytes": 13151768576,
-    "free_gib": 12.249,
+    "used_bytes": 230934499328,
+    "free_bytes": 14172696576,
+    "free_gib": 13.199,
     "minimum_free_bytes": 5368709120,
     "minimum_free_gib": 5.0,
     "write_probe": "ok",
@@ -41,9 +34,9 @@
     {
       "role": "live",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime/live_cycle.json",
-      "state": "off_hours",
-      "attempt_age_minutes": 2.544,
-      "success_age_minutes": 731.194,
+      "state": "success",
+      "attempt_age_minutes": 1.104,
+      "success_age_minutes": 1.104,
       "consecutive_failures": 0,
       "critical": true,
       "healthy": true,
@@ -52,9 +45,9 @@
     {
       "role": "retry",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime/retry_cycle.json",
-      "state": "off_hours",
-      "attempt_age_minutes": 0.911,
-      "success_age_minutes": 719.177,
+      "state": "success",
+      "attempt_age_minutes": 0.787,
+      "success_age_minutes": 0.787,
       "consecutive_failures": 0,
       "critical": true,
       "healthy": true,
@@ -63,9 +56,9 @@
     {
       "role": "screenshot_post",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime/screenshot_post_cycle.json",
-      "state": "running",
-      "attempt_age_minutes": 0.127,
-      "success_age_minutes": 720.294,
+      "state": "success",
+      "attempt_age_minutes": 0.504,
+      "success_age_minutes": 0.504,
       "consecutive_failures": 0,
       "critical": true,
       "healthy": true,
@@ -74,9 +67,9 @@
     {
       "role": "screenshot_import",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime/screenshot_import_cycle.json",
-      "state": "success",
-      "attempt_age_minutes": 0.127,
-      "success_age_minutes": 0.127,
+      "state": "running",
+      "attempt_age_minutes": 0.17,
+      "success_age_minutes": 1.17,
       "consecutive_failures": 0,
       "critical": true,
       "healthy": true,
@@ -85,9 +78,9 @@
     {
       "role": "screenshot_archive",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime/screenshot_archive_cycle.json",
-      "state": "off_hours",
-      "attempt_age_minutes": 2.911,
-      "success_age_minutes": 718.961,
+      "state": "success",
+      "attempt_age_minutes": 3.02,
+      "success_age_minutes": 3.02,
       "consecutive_failures": 0,
       "critical": false,
       "healthy": true,
@@ -97,8 +90,8 @@
       "role": "dashboard",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime/dashboard_cycle.json",
       "state": "success",
-      "attempt_age_minutes": 708.094,
-      "success_age_minutes": 708.094,
+      "attempt_age_minutes": 718.237,
+      "success_age_minutes": 718.237,
       "consecutive_failures": 0,
       "critical": false,
       "healthy": true,
@@ -108,67 +101,73 @@
       "role": "publisher",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime/publisher_cycle.json",
       "state": "success",
-      "attempt_age_minutes": 718.094,
-      "success_age_minutes": 718.094,
+      "attempt_age_minutes": 9.87,
+      "success_age_minutes": 9.87,
       "consecutive_failures": 0,
       "critical": true,
-      "healthy": false,
-      "issues": [
-        "attempt_stale",
-        "success_stale"
-      ]
+      "healthy": true,
+      "issues": []
     }
   ],
   "artifacts": [
     {
       "name": "race_schedule",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/official_live_ranking_20260907.json",
-      "age_minutes": null,
+      "age_minutes": 0.85,
       "max_age_minutes": 8.0,
-      "healthy": false,
-      "issues": [
-        "missing_or_stale"
-      ]
+      "healthy": true,
+      "issues": []
     },
     {
       "name": "dashboard_json",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/manshu_system_dashboard_latest.json",
-      "age_minutes": 541.731,
+      "age_minutes": 0.795,
       "max_age_minutes": 15.0,
-      "healthy": false,
-      "issues": [
-        "missing_or_stale"
-      ]
+      "healthy": true,
+      "issues": []
     },
     {
       "name": "monitor_output",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/boaters_manshu_alerts_20260907.json",
-      "age_minutes": null,
+      "age_minutes": 0.808,
       "max_age_minutes": 15.0,
-      "healthy": false,
-      "issues": [
-        "missing_or_stale"
-      ]
+      "healthy": true,
+      "issues": []
     }
   ],
   "semantic_checks": [
     {
       "name": "race_schedule_integrity",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/official_live_ranking_20260907.json",
-      "healthy": false,
-      "issues": [
-        "payload_not_object"
-      ],
-      "race_count": null
+      "healthy": true,
+      "issues": [],
+      "race_count": 12
     },
     {
       "name": "monitor_decision_integrity",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/boaters_manshu_alerts_20260907.json",
-      "healthy": false,
-      "issues": [
-        "data_integrity_missing"
-      ],
-      "integrity": {}
+      "healthy": true,
+      "issues": [],
+      "integrity": {
+        "version": "boaters-monitor-integrity-v2",
+        "expected_race_count": 12,
+        "inspected_race_count": 12,
+        "all_expected_races_inspected": true,
+        "missing_inspection_race_ids": [],
+        "duplicate_inspection_race_ids": [],
+        "global_failures": [],
+        "due_race_count": 1,
+        "due_decision_required_count": 1,
+        "due_complete_count": 1,
+        "due_source_unavailable_count": 0,
+        "due_pending_count": 0,
+        "due_incomplete_count": 0,
+        "due_coverage_pct": 100.0,
+        "all_due_complete": true,
+        "pending_due_races": [],
+        "incomplete_due_races": [],
+        "healthy": true
+      }
     },
     {
       "name": "external_runtime_integrity",
@@ -251,32 +250,14 @@
       "state": "already_loaded"
     },
     {
-      "role": "publisher",
-      "label": "com.mm1601.boaters-dashboard-publisher",
+      "role": "audit",
+      "label": "com.mm1601.boaters-runtime-audit",
       "state": "already_loaded"
     },
     {
       "role": "publisher",
       "label": "com.mm1601.boaters-dashboard-publisher",
-      "state": "kicked",
-      "message": ""
-    },
-    {
-      "role": "screenshot_post",
-      "label": "com.mm1601.boaters-post-snapshot",
-      "state": "kicked",
-      "message": ""
-    },
-    {
-      "role": "screenshot_post",
-      "label": "com.mm1601.boaters-post-snapshot",
-      "state": "cooldown"
-    },
-    {
-      "role": "retry",
-      "label": "com.mm1601.boaters-original-retry",
-      "state": "kicked",
-      "message": ""
+      "state": "already_loaded"
     }
   ]
 }
