@@ -1,7 +1,7 @@
 {
   "version": "manshu-purchase-queue-v1",
   "date": "2026-09-08",
-  "generated_at": "2026-09-08T18:42:00+09:00",
+  "generated_at": "2026-09-08T19:11:37+09:00",
   "policy": {
     "manual_final_confirmation_required": true,
     "automatic_wager_submission": false,
