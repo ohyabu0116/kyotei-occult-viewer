@@ -1,10 +1,10 @@
 {
   "version": "boaters-runtime-health-v1",
-  "generated_at": "2026-09-09T11:09:36+09:00",
+  "generated_at": "2026-09-09T11:41:14+09:00",
   "date": "2026-09-09",
   "active_window": true,
   "startup_warmup": false,
-  "active_minutes": 129.611,
+  "active_minutes": 161.236,
   "window": {
     "start": "09:00",
     "end": "21:00"
@@ -24,9 +24,9 @@
     "reason": "ok",
     "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime",
     "total_bytes": 245107195904,
-    "used_bytes": 228358004736,
-    "free_bytes": 16749191168,
-    "free_gib": 15.599,
+    "used_bytes": 227442974720,
+    "free_bytes": 17664221184,
+    "free_gib": 16.451,
     "minimum_free_bytes": 5368709120,
     "minimum_free_gib": 5.0,
     "write_probe": "ok",
@@ -39,9 +39,9 @@
       "role": "live",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime/live_cycle.json",
       "state": "preflight_failed",
-      "attempt_age_minutes": 3.561,
-      "success_age_minutes": 35.677,
-      "consecutive_failures": 3,
+      "attempt_age_minutes": 3.886,
+      "success_age_minutes": 67.303,
+      "consecutive_failures": 7,
       "critical": true,
       "healthy": false,
       "issues": [
@@ -53,9 +53,9 @@
       "role": "retry",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime/retry_cycle.json",
       "state": "preflight_failed",
-      "attempt_age_minutes": 2.377,
-      "success_age_minutes": 32.277,
-      "consecutive_failures": 8,
+      "attempt_age_minutes": 2.619,
+      "success_age_minutes": 63.903,
+      "consecutive_failures": 16,
       "critical": true,
       "healthy": false,
       "issues": [
@@ -67,9 +67,9 @@
       "role": "screenshot_post",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime/screenshot_post_cycle.json",
       "state": "running",
-      "attempt_age_minutes": 1.111,
-      "success_age_minutes": 41.361,
-      "consecutive_failures": 9,
+      "attempt_age_minutes": 2.253,
+      "success_age_minutes": 72.986,
+      "consecutive_failures": 15,
       "critical": true,
       "healthy": true,
       "issues": []
@@ -78,8 +78,8 @@
       "role": "screenshot_import",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime/screenshot_import_cycle.json",
       "state": "success",
-      "attempt_age_minutes": 0.011,
-      "success_age_minutes": 0.011,
+      "attempt_age_minutes": 0.319,
+      "success_age_minutes": 0.319,
       "consecutive_failures": 0,
       "critical": true,
       "healthy": true,
@@ -89,8 +89,8 @@
       "role": "screenshot_archive",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime/screenshot_archive_cycle.json",
       "state": "success",
-      "attempt_age_minutes": 4.461,
-      "success_age_minutes": 4.461,
+      "attempt_age_minutes": 0.069,
+      "success_age_minutes": 0.069,
       "consecutive_failures": 0,
       "critical": false,
       "healthy": true,
@@ -100,8 +100,8 @@
       "role": "dashboard",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime/dashboard_cycle.json",
       "state": "success",
-      "attempt_age_minutes": 836.161,
-      "success_age_minutes": 836.161,
+      "attempt_age_minutes": 867.786,
+      "success_age_minutes": 867.786,
       "consecutive_failures": 0,
       "critical": false,
       "healthy": true,
@@ -111,8 +111,8 @@
       "role": "publisher",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/runtime/publisher_cycle.json",
       "state": "success",
-      "attempt_age_minutes": 27.027,
-      "success_age_minutes": 27.027,
+      "attempt_age_minutes": 28.619,
+      "success_age_minutes": 28.619,
       "consecutive_failures": 0,
       "critical": true,
       "healthy": true,
@@ -123,7 +123,7 @@
     {
       "name": "race_schedule",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/official_live_ranking_20260909.json",
-      "age_minutes": 14.278,
+      "age_minutes": 12.062,
       "max_age_minutes": 8.0,
       "healthy": false,
       "issues": [
@@ -133,7 +133,7 @@
     {
       "name": "dashboard_json",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/manshu_system_dashboard_latest.json",
-      "age_minutes": 5.089,
+      "age_minutes": 5.145,
       "max_age_minutes": 15.0,
       "healthy": true,
       "issues": []
@@ -141,7 +141,7 @@
     {
       "name": "monitor_output",
       "path": "/Users/ohyabumasaya/kyotei-mm1601-monitor/data/output/boaters_manshu_alerts_20260909.json",
-      "age_minutes": 15.919,
+      "age_minutes": 17.153,
       "max_age_minutes": 15.0,
       "healthy": false,
       "issues": [
@@ -173,31 +173,20 @@
         "missing_inspection_race_ids": [],
         "duplicate_inspection_race_ids": [],
         "global_failures": [],
-        "due_race_count": 3,
+        "due_race_count": 2,
         "due_decision_required_count": 1,
         "due_complete_count": 0,
         "due_source_unavailable_count": 0,
-        "due_pending_count": 2,
+        "due_pending_count": 1,
         "due_incomplete_count": 1,
         "due_coverage_pct": 0.0,
         "all_due_complete": false,
         "pending_due_races": [
           {
-            "race_id": "2026-09-091601",
-            "place_name": "児島",
-            "round": 1,
-            "minutes_to_deadline": 3.2,
-            "reasons": [
-              "original_boaters_data_not_verified",
-              "decision_incomplete:skip_incompatible_ai_source"
-            ],
-            "error": ""
-          },
-          {
-            "race_id": "2026-09-090401",
+            "race_id": "2026-09-090402",
             "place_name": "平和島",
-            "round": 1,
-            "minutes_to_deadline": 4.2,
+            "round": 2,
+            "minutes_to_deadline": 2.8,
             "reasons": [
               "original_boaters_data_not_verified",
               "decision_incomplete:skip_incompatible_ai_source"
@@ -207,10 +196,10 @@
         ],
         "incomplete_due_races": [
           {
-            "race_id": "2026-09-091405",
-            "place_name": "鳴門",
-            "round": 5,
-            "minutes_to_deadline": 0.2,
+            "race_id": "2026-09-091602",
+            "place_name": "児島",
+            "round": 2,
+            "minutes_to_deadline": 1.8,
             "reasons": [
               "original_boaters_data_not_verified",
               "decision_incomplete:skip_incompatible_ai_source"
@@ -299,11 +288,6 @@
     {
       "role": "screenshot_archive",
       "label": "com.mm1601.boaters-exhibition-5m",
-      "state": "already_loaded"
-    },
-    {
-      "role": "audit",
-      "label": "com.mm1601.boaters-runtime-audit",
       "state": "already_loaded"
     },
     {
